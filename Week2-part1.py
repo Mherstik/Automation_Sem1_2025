@@ -8,9 +8,7 @@
 name = ""
 age = 0
 
-
 name = input("What is your name? ")
-
 
 # says hello to the person with their name.
 # print("Hi there " + name + ". Would you like a coffee?")
@@ -22,13 +20,19 @@ b = 45      # This is an interger
 c = 45.0    # This is a float
 
 print(type(age))
-print(len(c))
+# print(len(c))
 print(len(age))
-# age = int(age)
+# age = int(age)   # Convert string to int
 # print(type(age))
 
 print(f'Next year you will"s be {int(age) + 1}!')
+
+#### Homework
+# Work out their age from the YEAR of Birth
+# Bonus - get the DOB and then tell them how old
+
+# What are the steps to make a cup of tea/coffee
+# Flow chart?
+
 # no validation
-
-
 
