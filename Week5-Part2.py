@@ -29,12 +29,13 @@ def getNumber():
 
 userList = []
 while len(userList) < 3:
-    print(len(userList))
+    print(f"User list if length: {len(userList)}")
     userInput = getNumber()
     userList.append(userInput)
     print(userList)
 
-
+for mumsChickenDInner in userList:
+    print(mumsChickenDInner)
 
 
 
