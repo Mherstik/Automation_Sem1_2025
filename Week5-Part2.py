@@ -27,9 +27,18 @@ def getNumber():
     print(userInput)
     return userInput
 
+# We could get the number by calling the
+# function 3 times.
+# a = getNumber()
+# b = getNumber()
+# c = getNumber()
+
+# That's boring...
+# Let's use a list!!
+
 userList = []
 while len(userList) < 3:
-    print(f"User list if length: {len(userList)}")
+    print(f"User list is length: {len(userList)}")
     userInput = getNumber()
     userList.append(userInput)
     print(userList)
