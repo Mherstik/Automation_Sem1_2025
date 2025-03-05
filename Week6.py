@@ -4,18 +4,21 @@ a = 12
 
 
 ### do tests for errors
-while True:
-    b = input("Gimme a number: ")
-    try:
-        b = int(b)
-        print(a / b)
-        break
-    except ValueError:
-        print("You gave an incorrect value.\nTry again")
-        
-    except ZeroDivisionError:
-        print("You gave me zero.\nTry again")
-## 
+def getNum():
+    # while True:
+        b = input("Gimme a number: ")
+        try:
+            b = int(b)
+            print(a / b)
+            # break
+        except ValueError:
+            print("You gave an incorrect value.\nTry again")
+            getNum()
+        except ZeroDivisionError:
+            print("You gave me zero.\nTry again")
+            getNum()
+##
+getNum()
 print("It finished")
 ##
 
