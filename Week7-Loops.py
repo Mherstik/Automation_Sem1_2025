@@ -3,7 +3,7 @@
 """
 Created on Wed Mar 12 09:18:33 2025
 
-@author: marcus
+@author: INSERT NAME HERE
 """
 
 # Here are some short tasks to practice writing 
