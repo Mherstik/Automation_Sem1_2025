@@ -43,6 +43,8 @@ print("7. While Loop: Find Factorial")
 # of a number (e.g., 5! = 5 × 4 × 3 × 2 × 1).
 
 
+# BONUS - can you use the math module
+
 print("8. For Loop: List of Strings")
 # Write a for loop to iterate over a list of words 
 # and print each word in uppercase.
@@ -64,6 +66,8 @@ print("11. While Loop: User Input")
 # to enter a number and prints it until the user 
 # enters 'stop'.
 
+
+# BONUS - append them to a list
 
 
 print("12. Nested Loop: Print a Triangle of Stars")
