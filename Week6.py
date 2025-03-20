@@ -37,7 +37,8 @@ password2 = "SuperSecret22"
 if password == "SuperSecret":
     print("Password incorrect")
 
-
+# Uncomment these to see the error printed or not.
+# The second part is printed when the assert statement fails.
 # assert password == 'SuperSecret', 'password should be different0'
 # assert password1 == 'SuperSecret1', 'password should be different1'
 # assert password2 == 'SuperSecret2', 'password should be different2'
