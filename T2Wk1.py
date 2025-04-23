@@ -18,7 +18,8 @@ start = time.time()
 
 # Download a file
 # time.sleep(2)
-url = "https://github.com/Mherstik/Automation_Sem1_2025/blob/main/20MB.zip"
+url = "https://github.com/Mherstik/Automation_Sem1_2025/raw/refs/heads/main/20MB.zip"
+# url2 = "https://github.com/Mherstik/Automation_Sem1_2025/raw/refs/heads/main/TestFile.file"
 filename = "filename.zip"
 ### SAVING
 # with open("filename.zip", mode="wb") as file:
@@ -27,8 +28,8 @@ filename = "filename.zip"
 try:
     response = requests.get(url) #  , stream=True)
     response.raise_for_status()
-    with open(filename, mode="w") as file:
-        file.write(response.content.decode('utf - 8'))
+    with open(filename, mode="wb") as file:
+        file.write(response.content)
 except requests.exceptions.RequestException as e:
     print(f'Error occurred: {e}')
     
