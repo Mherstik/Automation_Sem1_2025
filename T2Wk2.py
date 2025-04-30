@@ -4,6 +4,24 @@
 # Oi idiot... read this!!
 import os			# interacting with operating system
 import sys			# for getting system information
+import subprocess	# spawn process and get results
+
+
+## Test for packages
+import importlib
+modList = ['requests', 'speedtest-cli', 'time']
+
+for each in modList:
+    spec = importlib.util.find_spec(each)
+    if spec is not None:
+        print(f"Module {each} found")
+        # importlib.import_module(each)
+    else:
+        print(f"Module {each} not found")
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', each])
+        print(f"Installed module {each}")
+
+### Package is missing below
 import time			# used for timing
 import requests  	# used to download a file
 
@@ -49,3 +67,5 @@ def getSpeed():
     print("Download speed = ", round_dlspeed, "Mbps")
 
 getSpeed()
+
+
