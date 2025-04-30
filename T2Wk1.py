@@ -18,9 +18,10 @@ start = time.time()
 
 # Download a file
 # time.sleep(2)
-url = "https://github.com/Mherstik/Automation_Sem1_2025/raw/refs/heads/main/20MB.zip"
+url = "https://github.com/Mherstik/Automation_Sem1_2025/blob/main/20MB.zip"
+# url = "https://github.com/Mherstik/Automation_Sem1_2025/raw/refs/heads/main/20MB.zip"
 # url2 = "https://github.com/Mherstik/Automation_Sem1_2025/raw/refs/heads/main/TestFile.file"
-filename = "filename.zip"
+filename = "filename.html"
 ### SAVING
 # with open("filename.zip", mode="wb") as file:
 #     for chunk in response.iter_content(chunk_size=10 * 1024):
