@@ -64,8 +64,11 @@ def getSpeed():
     dlspeed = 160 / dltime
     #print(int(dlspeed))
     round_dlspeed = round(dlspeed,1)
-    print("Download speed = ", round_dlspeed, "Mbps")
+    # print("Download speed = ", round_dlspeed, "Mbps")
+    return round_dlspeed
 
-getSpeed()
+dlSpeed = getSpeed()
+print(dltime)
+print(dlSpeed)
 
 
