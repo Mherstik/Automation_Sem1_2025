@@ -4,9 +4,8 @@
 # and write header and random data as CSV.
 #
 # Input: Random Data, filename
-# Output: ComputerName, IP-address, MAC-address, ProcessorModel
-#			OperatingSystem, SystemTime, Internet_connection_speed,
-#           Active ports
+# Output:
+### ComputerName, IP-address, MAC-address, ProcessorModel, OperatingSystem, SystemTime, Internet_connection_speed, Active ports
 
 ## Check if file exists
 ## If not, create file
