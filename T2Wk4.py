@@ -63,10 +63,16 @@ else:
     print(f"{filename} ain't here!")
 
 ## Create file + add header
-
-
+    with open(filename, 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=headerList)
+        writer.writeheader()
+    print("Created file and wrote header")
 ## Add Data
-    
-    
+newRow = [hostname1,hostname2, basicList]
+with open(filename, 'a', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(newRow)
+    print("Added row")
+
 ### Read Data
 
