@@ -68,11 +68,21 @@ else:
         writer.writeheader()
     print("Created file and wrote header")
 ## Add Data
-newRow = [hostname1,hostname2, basicList]
-with open(filename, 'a', newline='') as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerow(newRow)
-    print("Added row")
+def addData():
+    newRow = [hostname1,get_hostname2(), basicList]
+    with open(filename, 'a', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(newRow)
+        print("Added row")
 
+addData()
 ### Read Data
+i = 0
+with open(filename, 'r', newline='') as csvfile:
+    reader = csv.reader(csvfile)
+    for row in reader:
+        i += 1
+        print(row)
+        print(i)
+
 
