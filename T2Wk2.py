@@ -62,13 +62,15 @@ def getSpeed():
     # Calculate download speed = time vs file size.
     # Filesize = 20MB * 8 = 160Mb
     dlspeed = 160 / dltime
+    print(dlspeed)
     #print(int(dlspeed))
     round_dlspeed = round(dlspeed,1)
     # print("Download speed = ", round_dlspeed, "Mbps")
     return round_dlspeed
 
 dlSpeed = getSpeed()
-print(dltime)
+# print(dltime)
 print(dlSpeed)
+print(int(dlSpeed))
 
 
