@@ -20,9 +20,12 @@ def addRow():
 ### Read the table and compare all lines
 def compareCSV():                                   
     with open(filename, mode = 'r') as csvfile:
+        #csvReader = csv.reader(csvfile)
         csvReader = csv.DictReader(csvfile)
         for row in csvReader:
             print(row)
+            # if name and age in row:  ## NOT WORKING. Does OR test
+            # if name in row and age in row:
             if name == row['Name'] and age == row['Age']:
                 print(f"{name} and {age} matches data in row!")
                 
