@@ -9,6 +9,16 @@
 # Script to ping all IP addresses in a /24 subnet
 import os
 
+## check what operating system I'm using
+import platform
+print(platform.platform())
+print(platform.machine())
+print(platform.processor())
+print(platform.system())
+print(platform.release())
+print(platform.version())
+print(platform.system_alias())
+
 network = input ("Enter first 3 numbers of IP network, e.g. 1.2.3: ")
 print(network)
 
