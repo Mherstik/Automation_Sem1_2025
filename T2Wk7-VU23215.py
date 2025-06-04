@@ -44,7 +44,7 @@ def ping_host(ip_address):
     ping_param = getOS()
     try:
         result = subprocess.run(['ping', ping_param, '2', ip_address],
-                              stdout=subprocess.PIPE,
+           port                   stdout=subprocess.PIPE,
                               stderr=subprocess.PIPE,
                               text=True,
                               timeout=2)
