@@ -15,5 +15,6 @@ print(network)
 # Iterate over all usable IPs in this subnet
 for host in range (1, 254 + 1):
     print("Pinging " + network + "." + str(host))
+# Windows error here!!
     os.system("ping -c 2 " + network + "." + str(host))
 
