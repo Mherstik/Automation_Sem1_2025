@@ -52,7 +52,7 @@ class PortScanner:
             url = f"http://{host}"
             response = requests.get(url, timeout=5)
             return f"HTTP Server Response:\nStatus: {response.status_code}\n" \
-                   # f"Headers: {dict(response.headers)}"
+                   f"Headers: {dict(response.headers)}"
         except Exception as e:
             return f"HTTP scan failed: {str(e)}"
     
