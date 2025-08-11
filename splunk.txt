@@ -1,0 +1,6 @@
+wget -O splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz "https://download.splunk.com/products/universalforwarder/releases/10.0.0/linux/splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.tgz"
+
+
+wget -O splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.deb "https://download.splunk.com/products/universalforwarder/releases/10.0.0/linux/splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.deb"
+
+wget -O splunkforwarder-10.0.0-e8eb0c4654f8-windows-x64.msi "https://download.splunk.com/products/universalforwarder/releases/10.0.0/windows/splunkforwarder-10.0.0-e8eb0c4654f8-windows-x64.msi"
